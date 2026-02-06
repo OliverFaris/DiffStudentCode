@@ -3,7 +3,7 @@
  * A tool for finding the longest shared substring between two documents.
  *
  * @author Zach Blick
- * @author YOUR NAME HERE
+ * @author Oliver Faris
  */
 public class PlagiarismChecker {
 
