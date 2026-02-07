@@ -14,10 +14,24 @@ public class PlagiarismChecker {
      * @param doc2 the second
      * @return The length of the longest shared substring.
      */
+
+    // TABULATION SOLUTION
     public static int longestSharedSubstring(String doc1, String doc2) {
+        int len1 = doc1.length();
+        int len2 = doc2.length();
+        int [][] tab = new int[len1 +1][len2 +1];
 
-        // TODO Complete this function to return the length of the longest shared substring.
+        for (int i = 1; i < len1+1; i++) {
+            for (int j = 1; j < len2+1; j++) {
+                // If the letters are the same go diagonal
+                if (doc1.charAt(i-1) == doc2.charAt(j-1))
+                    tab[i][j] = 1 + tab[i-1][j-1];
+                // If the letters aren't the same, take the max of the two options
+                else
+                    tab[i][j] = Math.max(tab[i][j-1], tab[i-1][j]);
+            }
+        }
 
-        return 0;
+        return tab[len1][len2];
     }
 }
