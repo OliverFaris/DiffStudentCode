@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f68ad4e4-7dd7-4950-93fb-5d96ae262228" name="Changes" comment="V1">
+    <list default="true" id="f68ad4e4-7dd7-4950-93fb-5d96ae262228" name="Changes" comment="Tabulation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DiffStudentCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DiffStudentCode.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WORK_LOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/WORK_LOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlagiarismChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlagiarismChecker.java" afterDir="false" />
     </list>
@@ -39,6 +38,7 @@
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.PlagiarismCheckerTest.executor": "Run",
+    "JUnit.PlagiarismCheckerTest.testCorrectMed.executor": "Run",
     "JUnit.PlagiarismCheckerTest.testCorrectSmall.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -59,6 +59,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PlagiarismCheckerTest.testCorrectMed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DiffStudentCode" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PlagiarismCheckerTest" />
+      <option name="METHOD_NAME" value="testCorrectMed" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PlagiarismCheckerTest.testCorrectSmall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DiffStudentCode" />
       <option name="PACKAGE_NAME" value="" />
@@ -72,6 +82,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PlagiarismCheckerTest" />
+        <item itemvalue="JUnit.PlagiarismCheckerTest.testCorrectMed" />
         <item itemvalue="JUnit.PlagiarismCheckerTest.testCorrectSmall" />
       </list>
     </recent_temporary>
@@ -100,11 +111,20 @@
       <option name="project" value="LOCAL" />
       <updated>1770365253703</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Tabulation">
+      <option name="closed" value="true" />
+      <created>1770507745997</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1770507745997</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="V1" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1" />
+    <MESSAGE value="Tabulation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tabulation" />
   </component>
 </project>

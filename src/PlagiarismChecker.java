@@ -16,6 +16,7 @@ public class PlagiarismChecker {
      */
 
     // TABULATION SOLUTION
+    /*
     public static int longestSharedSubstring(String doc1, String doc2) {
         int len1 = doc1.length();
         int len2 = doc2.length();
@@ -33,5 +34,30 @@ public class PlagiarismChecker {
         }
 
         return tab[len1][len2];
+    }
+    */
+
+    // RECURSIVE SOLUTION
+    public static int longestSharedSubstring(String doc1, String doc2) {
+        int[][] memo = new int[doc1.length()][doc2.length()];
+        return findLSS(doc1, doc2, doc1.length()-1, doc2.length()-1, memo);
+    }
+
+    public static int findLSS(String doc1, String doc2, int textLen1, int textLen2, int[][] memo) {
+        // Base case
+        if (textLen1 < 0 || textLen2 < 0)
+            return 0;
+
+        // If not memoized already
+        if (memo[textLen1][textLen2] == 0) {
+            // When letters are the same, remove the char from both texts and add 1 to the longest shared substring between the two texts
+            if (doc1.charAt(textLen1) == doc2.charAt(textLen2))
+                memo[textLen1][textLen2] = 1 + findLSS(doc1, doc2, textLen1 - 1, textLen2 - 1, memo);
+            // When chars aren't the same get the maximum longest shared substring whether it's removing a char from one or the other text
+            else
+                memo[textLen1][textLen2] = Math.max(findLSS(doc1, doc2, textLen1, textLen2 - 1, memo), findLSS(doc1, doc2, textLen1 - 1, textLen2, memo));
+        }
+
+        return memo[textLen1][textLen2];
     }
 }
