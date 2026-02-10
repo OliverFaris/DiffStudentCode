@@ -16,7 +16,6 @@ public class PlagiarismChecker {
      */
 
     // TABULATION SOLUTION
-    /*
     public static int longestSharedSubstring(String doc1, String doc2) {
         int len1 = doc1.length();
         int len2 = doc2.length();
@@ -35,9 +34,9 @@ public class PlagiarismChecker {
 
         return tab[len1][len2];
     }
-    */
 
     // RECURSIVE SOLUTION
+    /*
     public static int longestSharedSubstring(String doc1, String doc2) {
         int[][] memo = new int[doc1.length()][doc2.length()];
         return findLSS(doc1, doc2, doc1.length()-1, doc2.length()-1, memo);
@@ -60,4 +59,5 @@ public class PlagiarismChecker {
 
         return memo[textLen1][textLen2];
     }
+    */
 }
